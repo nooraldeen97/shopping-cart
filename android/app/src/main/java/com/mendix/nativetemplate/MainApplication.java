@@ -10,7 +10,7 @@ import com.mendix.mendixnative.MendixReactApplication;
 import com.mendix.mendixnative.react.splash.MendixSplashScreenPresenter;
 import com.microsoft.codepush.react.BuildConfig;
 import com.microsoft.codepush.react.CodePush;
-
+import com.reactnativecommunity.art.ARTPackage;
 import org.devio.rn.splashscreen.SplashScreen;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 
@@ -33,6 +33,18 @@ public class MainApplication extends MendixReactApplication {
         packages.add(new SplashScreenReactPackage());
 
         return packages;
+    }
+
+        @Override
+    protected List<ReactPackage> getPackages() {
+      @SuppressWarnings("UnnecessaryLocalVariable")
+      List<ReactPackage> packages = new PackageList(this).getPackages();
+      
+      
+      packages.add(new ARTPackage());
+      
+     
+      return packages;
     }
 
     @Override

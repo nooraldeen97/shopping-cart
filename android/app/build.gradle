@@ -121,7 +121,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     implementation "com.facebook.react:react-native:+"  // From node_modules
-
+    implementation project(':react-native-art')
     // Flipper debugger
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group: "com.facebook.fbjni"

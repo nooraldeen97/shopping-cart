@@ -31,22 +31,9 @@ public class MainApplication extends MendixReactApplication {
         // packages.add(new MyReactNativePackage());
         packages.add(new CodePush(getCodePushKey(), getApplicationContext(), BuildConfig.DEBUG));
         packages.add(new SplashScreenReactPackage());
-
+        packages.add(new ARTPackage());
         return packages;
     }
-
-        @Override
-    protected List<ReactPackage> getPackages() {
-      @SuppressWarnings("UnnecessaryLocalVariable")
-      List<ReactPackage> packages = new PackageList(this).getPackages();
-      
-      
-      packages.add(new ARTPackage());
-      
-     
-      return packages;
-    }
-
     @Override
     public MendixSplashScreenPresenter createSplashScreenPresenter() {
         return new MendixSplashScreenPresenter() {

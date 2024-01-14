@@ -82,8 +82,8 @@
     ],
     "capabilities": {
         "deepLink": {
-            "value": "",
-            "enabled": false,
+            "value": "shoppingcart",
+            "enabled": true,
             "android": {
                 "webLinks": [
                     {
@@ -121,8 +121,5 @@
         "nativeOTA": {
             "enabled": false
         }
-    },
-    "appVersion": "0.0.1",
-    "buildNumber": 1,
-    "runtimeUrl": "https://shoppingcart170-sandbox.mxapps.io/"
+    }
 }
